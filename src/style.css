@@ -1,0 +1,145 @@
+:root{
+    --main-color: #dc143c;
+    --font-color: #fff;
+    --back-color: #222;
+    --btn-color: #880c25;
+    --tbl-border: #d13c3c;
+    --tbl-foot: #0D6EFD;
+    --btn-green: #04aa6d;
+    --btn-blue: #008cba;
+    --btn-red: #f44336;
+    --btn-gray: #e7e7e7;
+    --btn-black: #555555;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+a, a:link, a:hover, a:visited, a:active{
+    text-decoration: none;
+    outline: none;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--back-color);
+}
+.titulo{
+    background-color: var(--main-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: var(--font-color);
+}
+.titulo h1{
+    margin: 0;
+}
+.contenedor{
+    width: 100%;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    color: var(--font-color);
+}
+.parrafo{
+    text-align: justify;
+}
+.button{
+    width: auto;
+    background-color: var(--main-color);
+    color: var(--font-color);
+    padding: 10px;
+    display: inline-block;
+}
+.button:hover{
+    background-color: var(--btn-color);
+}
+.my_list{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.my_list li{
+    position: relative;
+}
+.my_list li a{
+    display: block;
+    padding: 10px 20px;
+}
+.my_list ul{
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    left: -40px;
+}
+.my_list li:hover > ul{
+    display: block;
+}
+.my_list ul li{
+    width: 200px;
+}
+.tabla{
+    width: 100%;
+    border-collapse: collapse;
+}
+.tabla th{
+    background-color: var(--main-color);
+    color: var(--font-color);
+    text-align: center;
+}
+.tabla tbody tr:nth-child(even){
+    background-color: var(--tbl-border);
+}
+.tabla tbody tr:nth-child(odd){
+    background-color: var(--main-color);
+}
+.tabla td{
+    color: var(--font-color);
+    border: 1px solid var(--btn-color);
+}
+.tabla td:hover{
+    background-color: var(--btn-color);
+}
+.tabla tfoot{
+    background-color: var(--tbl-foot);
+}
+.jumbotron{
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+}
+.boton{
+    border: none;
+    color: var(--font-color);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn_green{
+    background-color: var(--btn-green);
+}
+.btn_blue{
+    background-color: var(--btn-blue);
+}
+.btn_red{
+    background-color: var(--btn-red);
+}
+.btn_gray{
+    background-color: var(--btn-gray);
+    color: var(--back-color);
+}
+.btn_black{
+    background-color: var(--btn-black);
+}
+#caja_titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
